@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "BTTF";
+    src: url("fonts/BTTF.ttf");
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: #fff;
+    
+    
+}
+
+.top-navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-navbar{
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: all 0.3s ease-in;
+    margin-top: 5px;
+    width: 100%;
+    padding: 0;
+    height: 0px;
+}
+
+.hamburger-menu-options{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger-menu-options>.option{
+    border: solid 1px #fff;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    margin-top: .5em;
+    border-top: none;
+    border-right: none;
+}
+
+.hamburger-menu-options>.option:hover{
+    border-color: #DF711B;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    margin-top: .5em;
+    border-top: none;
+    border-right: none;
+}
+
+.left-navbar{
+    display: flex;
+    position: relative;
+}
+
+.logo-container{
+    position: relative;
+    margin-right: 1em;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    top:2.1px;
+}
+
+.menu-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;  
+    margin: 0;  
+    padding: 0;
+
+}
+
+.hamburger-menu-container{
+    padding:0;
+    margin: 0;
+}
+
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    order: -1;
+    
+}
+
+.hamburger>div{
+    height:4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 2em;
+    background-color: #fff;
+    transition: all 0.2s linear;
+}
+
+.bar-top.open{
+    transform: translateY(8px)
+}
+
+.bar-bottom.open{
+    transform: translateY(-8px)
+}
+
+.option{
+    margin-left: 1.5em;
+}
+
+.text-option{
+    font-family:"BTTF" ;
+}
+
+.text-option:hover{
+    color:#DF711B;
+}
+
+.cart-icon-container{
+    position:relative;
+    top:7px;
+    
+}
+
+
+
+@media screen and (max-width: 870px) {
+
+    .bottom-navbar.open{
+        transform: scale(1,1);
+        height: 90px;
+        
+    }
+
+    .menu-options{
+        display: none;
+    }
+
+    .left-navbar{
+        display: flex;
+        bottom:7px;
+    }
+
+    
+
+    .hamburger{
+        display: flex;
+        bottom:9.5px;
+    }
+
+    .hamburger-menu-container{
+        order:-1;
+    }
+
+
+    .navbar{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+
+
+    
+}
+
+@media screen and (max-width: 590px) {
+
+    .hamburger{
+        bottom: 13px;
+    }
+
+    .left-navbar{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+
+    .navbar{
+        margin: 0;
+    }
+
+    
+}
+
+
