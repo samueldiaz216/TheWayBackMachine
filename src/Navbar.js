@@ -50,8 +50,6 @@ function Navbar() {
                     <CartIcon></CartIcon>
                 </div>
 
-                
-
             </div>
 
             <div className="bottom-navbar">
