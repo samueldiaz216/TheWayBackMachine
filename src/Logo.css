@@ -77,7 +77,7 @@
     mix-blend-mode: multiply;
 } */
 
-.logo-and-video-container video{
+.logo-and-video-container>video{
     width:217px;
     position: relative;
 } 

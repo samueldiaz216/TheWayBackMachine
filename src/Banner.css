@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "BTTF";
+    src: url("fonts/BTTF.ttf");
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    margin-bottom: 200px;
+}
+
+.banner-gradient{
+    display: none;
+}
+
+
+.banner-delorean-container>video{
+    height:100%;
+    border-radius: 25px;
+    
+}
+
+
+.banner-delorean-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 90vh;
+    border-radius: 25px;
+    
+}
+
+
+
+.banner-delorean{
+    width:50%;
+    position: absolute;
+    bottom:-17%;
+    filter: grayscale(100%);
+    
+}
+
+.banner-delorean:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+    
+}
+
+.license-plate{
+    position: absolute;
+    padding: 0;
+    width:10%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom:34%;
+
+}
+
+.license-plate-logo{
+    font-family: 'BTTF';
+    font-size: 2vw;
+    margin: 0;
+}
+
+@media screen and (max-width: 1450px) {
+
+    
+
+
+    .banner-delorean{
+        width:60%;
+        
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .banner{
+        align-items: flex-start;
+    }
+
+    .banner-delorean-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+
+    .banner-delorean{
+        width:80%;
+        bottom:-21%;
+        z-index: 2;
+    }
+
+    .banner-gradient{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        bottom: -80px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+        height: 400px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner-delorean{
+        width:90%;
+        bottom:-17%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner-delorean{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner-delorean-container{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .banner-delorean-container>video{
+        border-radius: 0px;
+        
+    }
+
+    
+}
+
