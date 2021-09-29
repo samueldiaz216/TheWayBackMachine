@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "PermanentMarker";
-    src: url("fonts/PermanentMarker-x99j.ttf");
-}
-
-
 .product{
     width: 27%;
     min-width: 220px;
