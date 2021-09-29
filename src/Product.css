@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("fonts/PermanentMarker-x99j.ttf");
+}
+
+
+.product{
+    width: 27%;
+    min-width: 220px;
+    margin-top: .5em;
+    background-image: url('images/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg');
+    background-size: cover; 
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:1em;
+    margin:1em;
+    position: relative;
+}
+
+
+.product>img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.product>img:hover{
+    cursor: pointer;
+}
+
+.productInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    font-family: "PermanentMarker";
+}
+
+.productTitle{
+    font-size:2em;
+    padding:0;
+    margin:0;
+}
+
+.productTitle:hover{
+    cursor: pointer;
+}
+
+.productPrice{
+    font-size:3em;
+    padding:0;
+    margin:0;
+}
+
+.add-to-basket-button{
+    position: absolute;
+    width:12%;
+    bottom:.5em;
+    right:1em;  
+    border-radius: 7px;
+}
+
+.add-to-basket-button>img{
+    width:90%;
+    position: relative;
+    top:2px;
+
+}
+
+.add-to-basket-button:hover{
+    background-color: #1DB9C3;
+   
+}
+
+@media screen and (max-width: 1500px) {
+
+    .product>img{
+        height:300px;
+    }
+
+    .productTitle{
+        font-size:1.5em;
+        padding:0;
+        margin:0;
+    }
+    
+    .productPrice{
+        font-size:2em;
+        padding:0;
+        margin:0;
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 1205px) {
+
+    .product{
+        width: 35%;
+    }
+
+    
+}
+
+@media screen and (max-width: 1120px) {
+
+    .product>img{
+        height:250px;
+    }
+
+    
+    .productPrice{
+        font-size:1.5em;
+        padding:0;
+        margin:0;
+    } 
+    
+
+    
+}
+
+@media screen and (max-width: 725px) {
+
+    .product{
+        width: 50%;
+    }
+    
+
+    
+}

@@ -11,7 +11,7 @@ function Banner() {
     },[])
 
     return (
-        <div className="banner">
+        <section className="banner">
 
             <div className="banner-delorean-container">
                 <video autoPlay loop muted playsInline >
@@ -31,7 +31,7 @@ function Banner() {
 
             
 
-        </div>
+        </section>
     )
 }
 
