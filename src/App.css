@@ -3,9 +3,9 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    /* position: relative; */
     
 }
+
 
 a, a:hover, a:focus, a:active{
     text-decoration: none;
