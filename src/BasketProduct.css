@@ -1,0 +1,96 @@
+.basket-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    background-image: url("images/background-crumpled-paper-sheet_1194-7545.jpg");
+    background-size: cover; 
+    border-radius:10px;
+    font-family: "PermanentMarker";
+    padding:.7em;
+    position: relative;
+    margin-bottom:.5em;
+}
+
+.basket-product-left-container{
+    width:70%;
+    display: flex;
+}
+
+.basket-product-image{
+    width:15%;
+    border-radius: 5px;
+    margin-right: .5em;
+    min-width:100px;
+
+}
+
+.basket-product-info{
+    display: flex;
+    flex-direction: column;  
+}
+
+.basket-product-info-name{
+    font-size:1.5em;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+.basket-product-info>p{
+    font-size:1.2em;
+    padding: 0;
+    margin: 0; 
+}
+
+.basket-product-right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:10%;
+}
+
+
+
+.basket-product-price{
+    font-size: 2em;
+}
+
+.remove-from-basket-button{
+    width:30%;
+    min-width:40px;
+    border-radius:4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px;
+}
+
+.remove-from-basket-button:hover{
+    background-color:#FF4C29;
+}
+
+.remove-from-basket-icon{
+
+    width:90%;
+}
+
+@media screen and (max-width: 400px) {
+
+    .basket-product-info-name{
+        font-size:1.3em;
+        
+    }
+
+    .basket-product-info>p{
+        font-size:1em;
+        
+    }
+
+    .basket-product-price{
+        font-size:1.4em;
+        
+    }
+
+}
